@@ -1,0 +1,28 @@
+  <!--form handling-->
+  <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+       <div class="form-group">
+        <label for="name" class="text-dark">Toy Name</label>
+        <input type="hidden" name="id" value="">
+        <input type="text" name="name"value=""required>
+       </div> 
+       <div class="form-group">
+        <label for="national" class="text-dark">National</label>
+        <input type="text" name="national"value=""required>
+       </div> 
+       <div class="form-group">
+        <label for="price" class="text-dark">Price</label>
+        <input type="text" name="price"value=""required>
+       <div class="form-group"> 
+        <label for="status" class="text-dark">Status</label>
+        <input type="text" name="status"value=""required>
+       </div> 
+       <div class="form-group">
+        <label for="date" class="text-dark">Date</label>
+        <input type="date" name="date"value=""required>
+       </div> 
+       <div class="form-group">
+        <button type="submit" class="btn text-dark update">Save</button>
+       </div> 
+    </div>
+</form>

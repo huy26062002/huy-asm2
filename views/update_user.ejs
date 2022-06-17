@@ -1,0 +1,54 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+<!--Main Site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i>ATN Shop</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Toy's information</h2>
+            <span class="text-dark">Use the below form to update a new toy's information</span>
+        </div>
+
+<!--update user form-->
+        <!--form handling-->
+        <form method="POST" id="update_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="text-dark">Toy Name</label>
+                    <input type="hidden" name="id" value="<%= user._id %>">
+                    <input type="text" name="name"value="<%= user.name %>">
+                </div> 
+                <div class="form-group">
+                    <label for="national" class="text-dark">National</label>
+                    <input type="text" name="national"value="<%= user.national %>">
+                </div> 
+                <div class="form-group">
+                    <label for="price" class="text-dark">Price</label>
+                    <input type="text" name="price"value="<%= user.price %>">
+                </div> 
+                <div class="form-group">
+                    <label for="status" class="text-dark">Status</label>
+                    <input type="text" name="status"value="<%= user.status %>">
+                </div> 
+                <div class="form-group">
+                    <label for="date" class="text-dark">Date</label>
+                    <input type="date" name="date"value="<%= user.date %>">
+                </div> 
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Update</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+</main>
+<!--/Main Site-->
+
+<!--include footer-->
+    <%-include('include/_footer')%>
+<!--/include footer-->
